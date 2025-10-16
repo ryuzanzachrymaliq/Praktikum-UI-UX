@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-links a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  padding: 5px;
+}
+
+.cart {
+  text-decoration: none;
+}
+
+.cart:hover {
+  color: gray;
+  transition: 0.5s;
+}
+
+.container {
+  width: 85%;
+  margin: 30px auto;
+}
+
+.runtutan {
+  color: #777;
+  font-size: 14px;
+}
+
+.produk {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+img {
+  width: 300px;
+}
+
+.box-gambar {
+  width: 300px;
+  height: 300px;
+  background: #ddd;
+  border: 1px solid #ccc;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  border: 1px solid #aaa;
+}
+
+.harga {
+  font-size: 20px;
+  color: #222;
+  margin: 5px 0;
+}
+
+.ulasan {
+  color: #666;
+}
+
+.varian, .ukr1 {
+  margin-bottom: 20px;
+}
+
+.colors, .ukr2 {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.color, .ukr-btn {
+  border: 1px solid #aaa;
+  background: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.color:hover, .ukr-btn:hover {
+  background: #f0f0f0;
+  transition: 0.3s;
+}
+
+.pesan-btn {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background: #555;
+}
+
+.deskripsi {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.deskripsi h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}

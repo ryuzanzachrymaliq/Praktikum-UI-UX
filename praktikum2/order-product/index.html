@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Center </title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div id="container-form-order-pizza">
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home :</a></li>
+        <li><a href="#">Generation Link :</a></li>
+        <li><a href="#">Transaction Link :</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="title-form-box">
+      <h3 class="title-form">Order-Product</h3>
+    </div>
+
+    <div class="description-form">
+      <p class="description-text">We sell an expensive guitar </p>
+    </div>
+
+    <div class="form-box">
+      <p>Your Information</p>
+      <form action="output.php" method="post" enctype="multipart/form-data" id="pizza-order-form">
+
+        <div class="form-left">
+          <div class="upload-box">
+            <span>Upload Picture</span>
+          </div>
+          <input type="file" name="picture" id="picture" accept="image/*" required>
+        </div>
+      
+        <div class="form-right">
+          <div id="name-field">
+            <label for="title">Title Here :</label>
+            <input type="text" id="title" name="title" required placeholder="Your title please">
+          </div>
+      
+          <div id="description-field">
+            <label for="description-form">Description :</label>
+            <textarea id="description-form" name="description" minlength="10" maxlength="400"
+              rows="4" cols="40" placeholder="No more than 400 characters long"></textarea>
+          </div>
+          
+          <div id="price-field">
+            <label for="price-form">Price :</label>
+            <input type="text" id="price-form" name="price" required placeholder="Prices">
+          </div>
+
+          <div id="account-field">
+            <label for="account-form">Account Number :</label>
+            <input type="text" id="account-form" name="account" required placeholder="Account Number">
+          </div>
+      
+          <div id="bank">
+            <label for="bank-select">Bank :</label>
+            <select id="bank-select" name="bank" required>
+              <option value="">-- Choose Bank --</option>
+              <option value="BCA">BCA</option>
+              <option value="BNI">BNI</option>
+              <option value="Mandiri">Mandiri</option>
+            </select>
+          </div>
+      
+          <div id="accountholder-field">
+            <label for="holder">Account Holder :</label>
+            <input type="text" id="holder" name="holder" required placeholder="Name Here">
+          </div>
+      
+          <div id="transaction">
+            <label for="transaction-select">Transaction :</label>
+            <select id="transaction-select" name="transaction" required>
+              <option value="">-- Choose Transaction --</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <p style="margin-left:140px;font-size:12px;">
+              * If the transaction is for 3 person, choose 3 from the drop-down list
+            </p>
+          </div>
+      
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="send_mobile" checked> Send to Mobile Phone</label><br>
+            <label><input type="checkbox" name="send_email" checked> Send to Email</label>
+          </div>
+      
+          <div id="phone-field">
+            <label for="phone">Send to Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="123456789">
+          </div>
+      
+          <div id="email-field">
+            <label for="email">Send to Email :</label>
+            <input type="email" id="email" name="email" required
+              placeholder="@gmail.com">
+          </div>
+      
+          <div class="button-group">
+            <button type="submit" name="submit">-- Submit --</button>
+          </div>
+        </div>
+      </form>     
+    </div>
+  </div>
+</body>
+</html>
